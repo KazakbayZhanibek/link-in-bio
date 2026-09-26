@@ -1,0 +1,70 @@
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #f3e6d2;
+  background: #f3e6d2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --burgundy: #7a0f19;
+  --cream: #f3e6d2;
+  --mustard: #edb92f;
+  --green: #515b3d;
+  scrollbar-color: var(--burgundy) var(--cream);
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 40px 20px; }
+a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: #edb92f40; }
+h1, h2, p { margin: 0; }
+::selection { color: var(--burgundy); background: var(--mustard); }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: -7px; }
+.poster { width: 100%; max-width: 520px; margin-inline: auto; padding: 8px; background: var(--burgundy); }
+.introduction { padding: 27px 24px 25px; }
+h1 { font-family: 'Unbounded', sans-serif; font-size: clamp(1.85rem, 8.2vw, 3.1rem); font-weight: 800; line-height: 1.2; letter-spacing: -0.04em; text-transform: uppercase; }
+.introduction p { max-width: 30ch; margin-top: 20px; font-size: 18px; line-height: 1.55; text-wrap: pretty; }
+.location { display: block; margin-top: 19px; font-size: 12px; line-height: 1.5; }
+nav { display: grid; gap: 8px; scroll-margin-top: 8px; }
+nav:focus { outline: none; }
+.website, .github { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: center; padding: 24px; }
+.website { min-height: 142px; color: var(--burgundy); background: var(--mustard); }
+.link-heading { font-family: 'Unbounded', sans-serif; font-size: 24px; font-weight: 800; line-height: 1.4; letter-spacing: -0.025em; }
+.website .link-heading { font-size: 30px; }
+.link-description { grid-column: 1 / -1; margin-top: 10px; font-size: 14px; line-height: 1.6; }
+.arrow { width: 24px; height: 24px; flex-shrink: 0; }
+.website .arrow { width: 34px; height: 34px; }
+.pending { max-width: 9ch; font-size: 12px; line-height: 1.5; text-align: right; }
+.contact { padding: 23px 24px 8px; background: var(--green); color: var(--cream); }
+h2 { font-family: 'Unbounded', sans-serif; font-size: 20px; font-weight: 800; line-height: 1.5; letter-spacing: -0.025em; }
+.contact > p { margin-top: 5px; font-size: 14px; line-height: 1.6; }
+.contact-links { margin-top: 17px; }
+.contact-link { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 2px 12px; min-height: 73px; padding: 12px 0; border-top: 1px solid #f3e6d270; }
+.contact-link:focus-visible { outline-offset: 4px; }
+.contact-name { font-size: 16px; font-weight: 600; line-height: 1.5; }
+.contact-address { grid-column: 1; overflow-wrap: anywhere; font-size: 12px; line-height: 1.6; }
+.contact-link .arrow { grid-column: 2; grid-row: 1 / 3; width: 22px; height: 22px; }
+.contact-pending { padding-block: 16px; }
+.github { min-height: 110px; color: var(--burgundy); background: var(--cream); }
+.github .link-heading { font-size: 22px; }
+footer { display: flex; align-items: center; gap: 17px; padding: 25px 24px 20px; }
+.mountain-mark { width: 44px; height: 32px; flex-shrink: 0; color: var(--mustard); }
+footer p { max-width: 26ch; font-size: 13px; line-height: 1.7; text-wrap: pretty; }
+.skip-link { position: fixed; z-index: 2; top: 8px; left: 8px; transform: translateY(-160%); padding: 14px 20px; color: var(--burgundy); background: var(--cream); font-weight: 600; }
+.skip-link:focus { transform: none; }
+@media (hover: hover) {
+  .link-surface:hover .link-heading, .contact-link:hover .contact-name { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+}
+.link-surface:active, .contact-link:active { outline: 2px solid currentColor; outline-offset: -7px; }
+@media (max-width: 559px) {
+  body { padding: 0; background: var(--burgundy); }
+  .poster { max-width: 520px; }
+  .introduction { padding-top: 27px; }
+}
+@media (max-width: 359px) {
+  .introduction, .website, .github, .contact, footer { padding-inline: 18px; }
+  .website .link-heading { font-size: 25px; }
+  h2 { font-size: 18px; }
+  .introduction p { font-size: 16px; }
+}
+@media (forced-colors: active) {
+  .website, .contact, .github { border: 1px solid CanvasText; }
+  a { color: LinkText; }
+}
