@@ -21,6 +21,7 @@ a:focus-visible { outline: 3px solid currentColor; outline-offset: -7px; }
 .introduction { padding: 27px 24px 25px; }
 h1 { font-family: 'Unbounded', sans-serif; font-size: clamp(1.85rem, 8.2vw, 3.1rem); font-weight: 800; line-height: 1.2; letter-spacing: -0.04em; text-transform: uppercase; }
 .introduction p { max-width: 30ch; margin-top: 20px; font-size: 18px; line-height: 1.55; text-wrap: pretty; }
+.introduction .intro-story { max-width: 44ch; margin-top: 12px; font-size: 14px; line-height: 1.65; }
 .location { display: block; margin-top: 19px; font-size: 12px; line-height: 1.5; }
 nav { display: grid; gap: 8px; scroll-margin-top: 8px; }
 nav:focus { outline: none; }
@@ -44,9 +45,8 @@ h2 { font-family: 'Unbounded', sans-serif; font-size: 20px; font-weight: 800; li
 .contact-pending { padding-block: 16px; }
 .github { min-height: 110px; color: var(--burgundy); background: var(--cream); }
 .github .link-heading { font-size: 22px; }
-footer { display: flex; align-items: center; gap: 17px; padding: 25px 24px 20px; }
-.mountain-mark { width: 44px; height: 32px; flex-shrink: 0; color: var(--mustard); }
-footer p { max-width: 26ch; font-size: 13px; line-height: 1.7; text-wrap: pretty; }
+footer { padding: 25px 24px 20px; }
+footer p { font-size: 13px; line-height: 1.7; text-wrap: pretty; }
 .skip-link { position: fixed; z-index: 2; top: 8px; left: 8px; transform: translateY(-160%); padding: 14px 20px; color: var(--burgundy); background: var(--cream); font-weight: 600; }
 .skip-link:focus { transform: none; }
 @media (hover: hover) {

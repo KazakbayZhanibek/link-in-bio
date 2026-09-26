@@ -25,6 +25,7 @@ export default function App() {
       <header className="introduction">
         <h1>{page.name}</h1>
         <p>{page.introduction}</p>
+        <p className="intro-story">{page.about}</p>
         <span className="location">{page.location}</span>
       </header>
       <nav id="links" tabIndex={-1} aria-label={page.navigationLabel}>
@@ -49,7 +50,6 @@ export default function App() {
         </a>}
       </nav>
       <footer>
-        <svg className="mountain-mark" viewBox="0 0 48 32" fill="none" aria-hidden="true"><path d="m3 28 14-21 9 13 7-9 12 17H3Z M12 15l5 3 4-5" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>
         <p>{page.footer}</p>
       </footer>
     </main>

@@ -14,7 +14,8 @@ GitHub Pages настроен на GitHub Actions. Ваш компьютер и 
 - contact.telegram.url и description — Telegram и подпись.
 - contact.email.url — mailto:ваш-адрес; description — видимый адрес почты.
 - github.url — профиль GitHub.
-- name, introduction, footer — имя, знакомство и нижняя фраза.
+- name, introduction, about, location, footer — имя, знакомство, короткий рассказ,
+  возраст/город и нижняя фраза. Тексты основаны на личном портфолио.
 - meta — заголовок, описание и текст картинки для отправки ссылки.
 
 null или пустая строка отключают соответствующую ссылку.
