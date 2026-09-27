@@ -9,7 +9,7 @@ GitHub Pages настроен на GitHub Actions. Ваш компьютер и 
 ГДЕ МЕНЯТЬ ССЫЛКИ
 Один файл: src/config.ts.
 - website.url — публичный HTTPS-адрес вашего основного сайта.
-  Сейчас null: показан НЕкликабельный блок «Скоро здесь».
+  Указан ваш сайт: https://kazakbayzhanibek.github.io/JanibekPortfolio/
   http://127.0.0.1:5173/ — адрес только вашего компьютера, его не публикуем.
 - contact.telegram.url и description — Telegram и подпись.
 - contact.email.url — mailto:ваш-адрес; description — видимый адрес почты.

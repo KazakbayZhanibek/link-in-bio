@@ -9,7 +9,7 @@ export const page = {
   website: {
     title: 'Мой сайт',
     description: 'Обо мне и моих проектах',
-    url: null as string | null, // Только публичный https:// адрес. Не localhost.
+    url: 'https://kazakbayzhanibek.github.io/JanibekPortfolio/' as string | null,
     pendingLabel: 'Скоро здесь',
   },
   contact: {
