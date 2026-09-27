@@ -12,7 +12,7 @@
   scrollbar-color: var(--burgundy) var(--cream);
 }
 * { box-sizing: border-box; }
-body { margin: 0; padding: 40px 20px; }
+body { min-height: 100svh; margin: 0; padding: 40px 20px; }
 a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: #edb92f40; }
 h1, h2, p { margin: 0; }
 ::selection { color: var(--burgundy); background: var(--mustard); }
@@ -21,8 +21,6 @@ a:focus-visible { outline: 3px solid currentColor; outline-offset: -7px; }
 .introduction { padding: 27px 24px 25px; }
 h1 { font-family: 'Unbounded', sans-serif; font-size: clamp(1.85rem, 8.2vw, 3.1rem); font-weight: 800; line-height: 1.2; letter-spacing: -0.04em; text-transform: uppercase; }
 .introduction p { max-width: 30ch; margin-top: 20px; font-size: 18px; line-height: 1.55; text-wrap: pretty; }
-.introduction .intro-story { max-width: 44ch; margin-top: 12px; font-size: 14px; line-height: 1.65; }
-.location { display: block; margin-top: 19px; font-size: 12px; line-height: 1.5; }
 nav { display: grid; gap: 8px; scroll-margin-top: 8px; }
 nav:focus { outline: none; }
 .website, .github { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: center; padding: 24px; }
@@ -45,8 +43,6 @@ h2 { font-family: 'Unbounded', sans-serif; font-size: 20px; font-weight: 800; li
 .contact-pending { padding-block: 16px; }
 .github { min-height: 110px; color: var(--burgundy); background: var(--cream); }
 .github .link-heading { font-size: 22px; }
-footer { padding: 25px 24px 20px; }
-footer p { font-size: 13px; line-height: 1.7; text-wrap: pretty; }
 .skip-link { position: fixed; z-index: 2; top: 8px; left: 8px; transform: translateY(-160%); padding: 14px 20px; color: var(--burgundy); background: var(--cream); font-weight: 600; }
 .skip-link:focus { transform: none; }
 @media (hover: hover) {
@@ -59,7 +55,7 @@ footer p { font-size: 13px; line-height: 1.7; text-wrap: pretty; }
   .introduction { padding-top: 27px; }
 }
 @media (max-width: 359px) {
-  .introduction, .website, .github, .contact, footer { padding-inline: 18px; }
+  .introduction, .website, .github, .contact { padding-inline: 18px; }
   .website .link-heading { font-size: 25px; }
   h2 { font-size: 18px; }
   .introduction p { font-size: 16px; }

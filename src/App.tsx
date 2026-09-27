@@ -25,8 +25,6 @@ export default function App() {
       <header className="introduction">
         <h1>{page.name}</h1>
         <p>{page.introduction}</p>
-        <p className="intro-story">{page.about}</p>
-        <span className="location">{page.location}</span>
       </header>
       <nav id="links" tabIndex={-1} aria-label={page.navigationLabel}>
         {website
@@ -49,9 +47,6 @@ export default function App() {
           <span className="link-description">{page.github.description}</span>
         </a>}
       </nav>
-      <footer>
-        <p>{page.footer}</p>
-      </footer>
     </main>
   </React.Fragment>
 }
